@@ -1,0 +1,120 @@
+/* || GENERAL STYLES */
+
+* {
+  box-sizing: border-box;
+  font-family: "Azeret Mono", monospace;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+a {
+  color: #666;
+}
+
+a:hover {
+  color: black;
+}
+
+header {
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 50vh;
+  resize: vertical;
+  font-size: 20px;
+  padding: 0;
+  border: 6px solid black;
+  border-radius: 6px;
+  outline: none;
+  background-color: #222f3e;
+  color: white;
+  padding: 20px;
+}
+
+blockquote {
+  display: inline-block;
+  color: #666;
+  margin: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-left: 10px solid black;
+  background-color: #e5e5e5;
+}
+
+p {
+  font-size: 20px;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+ul ul {
+  list-style-type: circle;
+}
+
+li {
+  font-size: 20px;
+}
+
+code {
+  background-color: #222f3e;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* || EDITOR & PREVIEWER */
+
+.flex-container {
+  display: flex;
+  height: 100%;
+}
+
+.flex-item-input {
+  width: 50%;
+  background-color: #576574;
+  padding: 50px;
+}
+
+.flex-item-output {
+  width: 50%;
+  background-color: #c8d6e5;
+  padding: 50px;
+}
+
+/* || BREAKPOINTS */
+
+@media only screen and (max-width: 900px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item-input,
+  .flex-item-output {
+    width: 100%;
+    padding: 30px;
+  }
+}
